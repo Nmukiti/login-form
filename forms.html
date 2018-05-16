@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY FIRST FORM</title>
+	<style type="text/css">
+		body{
+			background-image: url(img.jpg);
+			background-repeat: no repeat;
+			background-size: 100%;ß
+		}
+		form{
+			color: white;
+			font-size: 24px;
+			font-family: gabriola;
+		}
+		input[type=text],select,[type=password]{
+			width: 80%;
+			padding: 20px;
+			margin: 8px;
+			display: inline-block;
+            border-radius: 5px;
+
+		}
+		input[type=submit]{
+			width: 80%
+            background-color:green;
+            color: gray;
+            padding: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+		}
+		input[type=submit]:hover{
+			background-color: #800000;
+		}
+	</style>
+</head>
+<body>
+     <!--The function of a form is to receive user input-->
+ <form>
+ 	<fieldset>
+     <h3>SIGNUP FORM</h3>
+  <p>Please fill in this form with your details</p>
+   <label for="fname">First Name</label><br>
+	<input type="text" name="firstname"placeholder="Enter name here" id="fname" required="">
+	<br>
+   <label for="sname">surname</label><br>
+	 <input type="text" name="surname" placeholder="Enter surname" id="sname">
+	 <br>
+	 <input type="radio" name="gender" value="male">Male <br>
+	 <input type="radio" name="gender" value="female" checked="">Female <br>
+	 <input type="radio" name="gender" value="N/A">Prefer not to disclose
+	 <br>
+	 <label>DOB</label>
+	 <input id="date" type="date"><br>
+   <label>Password</label><br>
+	<input type="password" name="psw" placeholder="Enter password" required=""><br>
+   <label>Confirm Password</label><br>
+	<input type="password" name="psw2" placeholder="Confirm password" required=""><br><br>
+	<!--We are going to use a select tag to enable one to choose from a dropdown-->
+	<label>Country</label><br>
+	      <select>
+	      	<option>Internet of Things</option>
+	      	<option>Java for beginners</option>
+	      	<option>HTML5</option>
+	      	<option>Android Application Development</option>
+	      </select><br><br>
+	      <input type="submit" name="submit" value="SUBMIT">
+	</fieldset>
+ </form>
+   <a href="login.html" style="font-style: italic;font-size: 22px;">Already have an account?Click here to login</a><br>
+   <a href="form.html"></a>
+   
+</body>
+</html>
